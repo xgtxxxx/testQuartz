@@ -1,7 +1,7 @@
 package com.quartz;
 
-import com.quartz.jobs.TestJob;
 import com.quartz.jobs.TestJob1;
+import com.quartz.key.Key;
 import com.quartz.listeners.AbstractListener;
 import com.quartz.listeners.TestListener;
 
@@ -37,12 +37,17 @@ public class TestQtz {
 			
 			
 			
-//			TestJob1 job22 = new TestJob1();
-//			job22.setName("_everyday5");
-//			AbstractListener listerer22 = new TestListener(job22.getName());
-//			job22.setListener(listerer22);
-//			job22.setRuntime("0 0/5 20 * * ?");
-//			qm.addJob(job22);
+			TestJob1 job22 = new TestJob1();
+			job22.setName("_everyday5");
+			AbstractListener listerer22 = new TestListener(job22.getName());
+			job22.setListener(listerer22);
+			job22.setRuntime("*/5 * * * * ?");
+			Key key = qm.addJob(job22);
+			
+			Thread.sleep(60000);
+			
+			System.out.println("===Remove job===");
+			qm.removeJob(key);;
 //			
 //			TestJob1 job33 = new TestJob1();
 //			job33.setName("_everyhour");

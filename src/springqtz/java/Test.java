@@ -10,7 +10,7 @@ public class Test {
 
 		   ApplicationContext context = new ClassPathXmlApplicationContext( 
 
-		     "applicationContext-quratz.xml"); 
+		     "applicationContext-jdbc.xml"); 
 
 		   // 如果配置文件中将startQuertz bean的lazy-init设置为false 则不用实例化 
 

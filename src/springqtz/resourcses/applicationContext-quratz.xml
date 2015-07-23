@@ -41,23 +41,23 @@
          <!-- 可继续加新的   --> 
        <!-- 定义调用对象和调用对象的方法结束 --> 
          <!-- 定义触发时间 --> 
-         <bean id="doTime" class="org.springframework.scheduling.quartz.CronTriggerBean"> 
+         <bean id="doTime" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean"> 
              <property name="jobDetail"> 
                  <ref bean="jobtask"/> 
              </property> 
              <!-- cron表达式 此处定义为一直触发执行任务 --> 
              <property name="cronExpression"> 
-                 <value>10,15,20,25,30,35,40,45,50,55 * * * * ?</value> 
+                 <value>*/5 * * * * ?</value> 
              </property> 
          </bean> 
 
-         <bean id="doTime2" class="org.springframework.scheduling.quartz.CronTriggerBean"> 
+         <bean id="doTime2" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean"> 
              <property name="jobDetail"> 
                  <ref bean="jobtask2"/> 
              </property> 
              <!-- cron表达式   此处定义周一至周日的下午13:15触发--> 
              <property name="cronExpression"> 
-                 <value>0 31 17 * * ?</value> 
+                 <value>0 */1 * * * ?</value> 
              </property> 
          </bean> 
          <!-- 可继续加新的   --> 

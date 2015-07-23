@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src/qtz/java"/>
+	<classpathentry kind="src" path="src/springqtz/resourcses"/>
+	<classpathentry kind="src" path="src/springqtz/java"/>
 	<classpathentry kind="src" path="src/example/resources"/>
 	<classpathentry kind="src" path="src/example/java"/>
 	<classpathentry kind="src" path="src/qtz/resourcses"/>
@@ -28,9 +30,15 @@
 	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.5.8.jar"/>
 	<classpathentry kind="lib" path="lib/log4j-1.2.14.jar"/>
 	<classpathentry kind="lib" path="lib/log4jdbc4-1.2.jar"/>
-	<classpathentry kind="lib" path="lib/quartz-all-2.1.7.jar"/>
 	<classpathentry kind="lib" path="lib/c3p0-0.9.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/ojdbc6.jar"/>
 	<classpathentry kind="lib" path="lib/ojdbc6dms.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbcp-1.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="lib/commons-pool-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/quartz-2.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/quartz-jobs-2.2.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
